@@ -1,7 +1,69 @@
+$content_size: 750px;
+
+// colors
+$color_mtrl_blue: #2196F3;
+$color_mtrl_blue_dark: #0D47A1;
+$color_mtrl_blue_light: #64B5F6;
+
+$anim_speed: 200ms;
+
 body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
-    font-family: sans-serif;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../img/gplaypattern_@2X.png");
+    // scale down the background so it looks nice on high DPI screens
+    background-size: 188px 178px;
+}
+
+.main-container {
+    width: 100%;
+    max-width: $content_size;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 5px;
+}
+
+.output {
+    text-align: center;
+    font-size: 22px;
+    min-height: 3em;
+    margin: 40px 0;
+    font-family: "Roboto Mono", monospace;
+}
+
+.btn-wrapper {
+    text-align: center;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+.btn-main {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background: $color_mtrl_blue;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    color: #fff;
+    box-shadow: 0 4px $color_mtrl_blue_dark;
+    transition: transform $anim_speed ease-out, 
+                box-shadow $anim_speed ease-out;
+
+    &:active {
+        transform: translateY(4px);
+        box-shadow: 0 0px $color_mtrl_blue_dark;
+    }
+
+    &:focus {
+        background: $color_mtrl_blue_light;
+    }
 }

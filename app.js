@@ -55,4 +55,5 @@ function generatePhrase() {
     fullPhrase = jsUcFirst(fullPhrase);
 
     outputElement.innerHTML = fullPhrase;
+    outputElement.focus();
 }

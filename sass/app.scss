@@ -67,3 +67,26 @@ body {
         background: $color_mtrl_blue_light;
     }
 }
+
+.footer {
+    $_font_size: 14px;
+
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-size: $_font_size;
+    text-align: center;
+
+    .link {
+        color: #555;
+        text-decoration: none;
+        background: none;
+        border: none;
+        font-size: $_font_size;
+        margin: 0 15px;
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

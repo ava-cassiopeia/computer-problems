@@ -12,7 +12,7 @@ let computerParts, phrases;
 })();
 
 function ajax(url, callback) {
-    let xmlhttp = new XMLHttpRequest();
+    var xmlhttp = new XMLHttpRequest();
 
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == XMLHttpRequest.DONE) {
@@ -41,19 +41,35 @@ function jsUcFirst(string) {
 }
 
 function generatePhrase() {
-    let outputElement = document.getElementById("output");
+    var outputElement = document.getElementById("output");
 
-    let firstPartIndex = getRandomRange(0, computerParts.list.length);
-    let secondPartIndex = getRandomRange(0, computerParts.list.length);
-    let phraseIndex = getRandomRange(0, phrases.list.length);
+    var firstPartIndex = getRandomRange(0, computerParts.list.length);
+    var secondPartIndex = getRandomRange(0, computerParts.list.length);
+    var phraseIndex = getRandomRange(0, phrases.list.length);
 
-    let firstPart = computerParts.list[firstPartIndex];
-    let secondPart = computerParts.list[secondPartIndex];
-    let phrase = phrases.list[phraseIndex];
+    var firstPart = computerParts.list[firstPartIndex];
+    var secondPart = computerParts.list[secondPartIndex];
+    var phrase = phrases.list[phraseIndex];
 
-    let fullPhrase = firstPart + " " + phrase + " " + secondPart + ".";
+    var fullPhrase = firstPart + " " + phrase + " " + secondPart + ".";
     fullPhrase = jsUcFirst(fullPhrase);
 
     outputElement.innerHTML = fullPhrase;
     outputElement.focus();
+
+    animateComputer();
+}
+
+function animateComputer() {
+    var targetElement = document.querySelector(".computer-wrapper");
+
+    requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+            targetElement.className = "computer-wrapper animate";
+
+            setTimeout(function() {
+                targetElement.className = "computer-wrapper";
+            }, 1000);
+        });
+    });
 }

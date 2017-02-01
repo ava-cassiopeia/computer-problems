@@ -1,4 +1,4 @@
-let computerParts, phrases;
+var computerParts, phrases, endingPunctuation;
 
 (function() {
     // load data
@@ -8,6 +8,10 @@ let computerParts, phrases;
 
     ajax("computer-parts.json", function(response) {
         computerParts = JSON.parse(response);
+    });
+
+    ajax("ending-punctuation.json", function(response) {
+        endingPunctuation = JSON.parse(response);
     });
 })();
 
@@ -46,12 +50,16 @@ function generatePhrase() {
     var firstPartIndex = getRandomRange(0, computerParts.list.length);
     var secondPartIndex = getRandomRange(0, computerParts.list.length);
     var phraseIndex = getRandomRange(0, phrases.list.length);
+    var punctIndex = getRandomRange(0, endingPunctuation.list.length);
 
     var firstPart = computerParts.list[firstPartIndex];
     var secondPart = computerParts.list[secondPartIndex];
     var phrase = phrases.list[phraseIndex];
+    var punctuation = endingPunctuation.list[punctIndex];
 
-    var fullPhrase = firstPart + " " + phrase + " " + secondPart + ".";
+    phrase = firstPart.plural ? (phrase.plural ? phrase.plural : phrase.singular) : phrase.singular;
+
+    var fullPhrase = firstPart.name + " " + phrase + " " + secondPart.name + punctuation;
     fullPhrase = jsUcFirst(fullPhrase);
 
     outputElement.innerHTML = fullPhrase;

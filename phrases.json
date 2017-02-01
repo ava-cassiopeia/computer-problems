@@ -1,7 +1,93 @@
 {
     "list": [
-        "is stuck in",
-        "is covered in",
-        "needs comfort from"
+        {
+            "singular": "is stuck in",
+            "plural": "are stuck in"
+        },
+        {
+            "singular": "is covered in",
+            "plural": "are covered in"
+        },
+        {
+            "singular": "needs comfort from"
+        },
+        {
+            "singular": "is interfereing with",
+            "plural": "are interfereing with"
+        },
+        {
+            "singular": "wants it from"
+        },
+        {
+            "singular": "is incorrectly plugged in to",
+            "plural": "are incorrectly plugged in to"
+        },
+        {
+            "singular": "is short circuting",
+            "plural": "are short circuting"
+        },
+        {
+            "singular": "has lost connection to",
+            "plural": "have lost connection to"
+        },
+        {
+            "singular": "is stronger than",
+            "plural": "are stronger than"
+        },
+        {
+            "singular": "is weaker than",
+            "plural": "are weaker than"
+        },
+        {
+            "singular": "has enveloped",
+            "plural": "have enveloped"
+        },
+        {
+            "singular": "was improperly installed on",
+            "plural": "were improperly installed on"
+        },
+        {
+            "singular": "is fooling around with",
+            "plural": "are fooling around with"
+        },
+        {
+            "singular": "refuses to take shit from"
+        },
+        {
+            "singular": "is waiting patiently on",
+            "plural": "are waiting patiently on"
+        },
+        {
+            "singular": "won't stop staring at"
+        },
+        {
+            "singular": "is cannabalizing",
+            "plural": "are cannabalizing"
+        },
+        {
+            "singular": "is not plugged in to",
+            "plural": "are not plugged in to"
+        },
+        {
+            "singular": "won't connect via Bluetooth&trade; to"
+        },
+        {
+            "singular": "doesn't have the correct dongle to connect to"
+        },
+        {
+            "singular": "forgot the password to"
+        },
+        {
+            "singular": "is being hacked by",
+            "plural": "are being hacked by"
+        },
+        {
+            "singular": "is making a mess with",
+            "plural": "are making a mess with"
+        },
+        {
+            "singular": "reminded",
+            "postfix": "about the futility of life"
+        }
     ]
 }

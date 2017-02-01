@@ -1,21 +1,192 @@
 {
     "list": [
-        "the RAM",
-        "the motherboard",
-        "the primary motherboard",
-        "more viruses than you could ever concieve of",
-        "viruses",
-        "the spectral motherboard",
-        "the GPU",
-        "both GPUs",
-        "the CPU",
-        "the type-y bit",
-        "the keyboard",
-        "the floppy disk tray",
-        "several floppy disks",
-        "the screen",
-        "the monitor cable",
-        "the monitor",
-        "the usb port"
+        {
+            "name": "the RAM",
+            "plural": false
+        },
+        {
+            "name": "the motherboard",
+            "plural": false
+        },
+        {
+            "name": "the primary motherboard",
+            "plural": false
+        },
+        {
+            "name": "more viruses than you could ever concieve of",
+            "plural": true
+        },
+        {
+            "name": "viruses",
+            "plural": true
+        },
+        {
+            "name": "the spectral motherboard",
+            "plural": false
+        },
+        {
+            "name": "the GPU",
+            "plural": false
+        },
+        {
+            "name": "both GPUs",
+            "plural": true
+        },
+        {
+            "name": "the CPU",
+            "plural": false
+        },
+        {
+            "name": "the type-y bit",
+            "plural": false
+        },
+        {
+            "name": "the keyboard",
+            "plural": false
+        },
+        {
+            "name": "the floppy disk tray",
+            "plural": false
+        },
+        {
+            "name": "several floppy disks",
+            "plural": true
+        },
+        {
+            "name": "the screen",
+            "plural": false
+        },
+        {
+            "name": "the monitor cable",
+            "plural": false
+        },
+        {
+            "name": "the monitor",
+            "plural": false
+        },
+        {
+            "name": "the usb port",
+            "plural": false
+        },
+        {
+            "name": "a literal typewriter",
+            "plural": false
+        },
+        {
+            "name": "approximately six mice",
+            "plural": true
+        },
+        {
+            "name": "the click-clack dongle-whopper",
+            "plural": false
+        },
+        {
+            "name": "the hinge",
+            "plural": false
+        },
+        {
+            "name": "the 'A' key",
+            "plural": false
+        },
+        {
+            "name": "a copy of <i>Total Recall</i>, on DVD",
+            "plural": false
+        },
+        {
+            "name": "the quantom crank",
+            "plural": false
+        },
+        {
+            "name": "the ramcicle",
+            "plural": false
+        },
+        {
+            "name": "the cord",
+            "plural": false
+        },
+        {
+            "name": "the charging cord",
+            "plural": false
+        },
+        {
+            "name": "the bit-byte bramblesnatch",
+            "plural": false
+        },
+        {
+            "name": "the boozle",
+            "plural": false
+        },
+        {
+            "name": "the charging port",
+            "plural": false
+        },
+        {
+            "name": "the fatherboard",
+            "plural": false
+        },
+        {
+            "name": "the dadboard",
+            "plural": false
+        },
+        {
+            "name": "64 commodores",
+            "plural": true
+        },
+        {
+            "name": "the blogosphere",
+            "plural": false
+        },
+        {
+            "name": "the cloud",
+            "plural": false
+        },
+        {
+            "name": "a backup server",
+            "plural": false
+        },
+        {
+            "name": "the computer",
+            "plural": false
+        },
+        {
+            "name": "another computer",
+            "plural": false
+        },
+        {
+            "name": "the whole situation",
+            "plural": false
+        },
+        {
+            "name": "David Bowie",
+            "plural": false
+        },
+        {
+            "name": "the wire-y bits",
+            "plural": false
+        },
+        {
+            "name": "the shock-y part",
+            "plural": false
+        },
+        {
+            "name": "TRON",
+            "plural": false
+        },
+        {
+            "name": "a swiggle port",
+            "plural": false
+        },
+        {
+            "name": "budget MS DOS",
+            "plural": false
+        },
+        {
+            "name": "the <i>Nozzle</i>",
+            "plural": false
+        },
+        {
+            "name": "a figurative typewriter",
+            "plural": false
+        }
     ]
 }

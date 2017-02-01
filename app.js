@@ -59,7 +59,12 @@ function generatePhrase() {
 
     phrase = firstPart.plural ? (phrase.plural ? phrase.plural : phrase.singular) : phrase.singular;
 
-    var fullPhrase = firstPart.name + " " + phrase + " " + secondPart.name + punctuation;
+    var fullPhrase = firstPart.name + " " + phrase + " " + secondPart.name;
+    if(phrase.postfix) {
+        fullPhrase += " " + phrase.postfix;
+    }
+    fullPhrase += punctuation;
+
     fullPhrase = jsUcFirst(fullPhrase);
 
     outputElement.innerHTML = fullPhrase;
